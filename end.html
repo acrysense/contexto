@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contexto</title>
+	<meta property="og:title" content="Word Finder">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Word Finder">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<h1 class="header__logotype">CONTEXTO <sup>DAILY</sup></h1>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-stats"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-settings"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-how-to"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- menu -->
+		<div class="menu" id="menu"></div>
+		<div class="menu-overlay" id="menu-overlay"></div>
+		<!-- end of menu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- won -->
+			<div class="won" id="won">
+				<div class="container">
+					<div class="won__wrapper">
+						<div class="won__top">
+							<h2 class="won__heading">You Won!</h2>
+						</div>
+						<div class="won__body">
+							<p class="won__description">
+								Nice job! You guessed the secret word in 10 tries!
+								<br>
+								The answer was:
+							</p>
+							<span class="won__word">movie</span>
+							<a href="#" class="won__btn btn">Share your result</a>
+							<div class="c-timer won__timer">
+								<span class="c-timer__help">NEXT WORD IN</span>
+								<span class="c-timer__value">21:36:18</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of won -->
+			<!-- word -->
+			<div class="word" id="word">
+				<div class="container">
+					<div class="word__top">
+						<span class="word__heading">Game: <b>#54</b></span>
+						<a href="#" class="word__link">New game</a>
+					</div>
+					<div class="word__wrapper">
+						<input type="text" class="word__input" placeholder="Enter a word">
+						<div class="word__not-found">
+							<span class="word__text">word not found</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of word -->
+			<!-- word progress -->
+			<div class="word-progress">
+				<div class="container">
+					<div class="word-progress__top">
+						<span class="word-progress__heading">Guesses: <b>11</b></span>
+						<div class="word-progress__sort">
+							<button class="word-progress__sort-tab word-progress__sort-tab--active">Similarity</button>
+							<button class="word-progress__sort-tab">Guesses</button>
+						</div>
+					</div>
+					<div class="word-progress__wrapper">
+						<div class="word-progress__inner" style="--progressWidth: 100%;">
+							<span class="word-progress__value">movie</span>
+							<span class="word-progress__value">1</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 90%;">
+							<span class="word-progress__value">film</span>
+							<span class="word-progress__value">4</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 80%;">
+							<span class="word-progress__value">actor</span>
+							<span class="word-progress__value">14</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 70%;">
+							<span class="word-progress__value">scene</span>
+							<span class="word-progress__value">29</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 60%;">
+							<span class="word-progress__value">singer</span>
+							<span class="word-progress__value">44</span>
+						</div>
+						<div class="word-progress__inner word-progress__inner--active" style="--progressWidth: 50%;">
+							<span class="word-progress__value">director</span>
+							<span class="word-progress__value">53</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 40%;">
+							<span class="word-progress__value">star</span>
+							<span class="word-progress__value">90</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 30%;">
+							<span class="word-progress__value">plane</span>
+							<span class="word-progress__value">114</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 20%;">
+							<span class="word-progress__value">amazing</span>
+							<span class="word-progress__value">219</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 10%;">
+							<span class="word-progress__value">crane</span>
+							<span class="word-progress__value">546</span>
+						</div>
+						<div class="word-progress__inner" style="--progressWidth: 0%;">
+							<span class="word-progress__value">house</span>
+							<span class="word-progress__value">1089</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of word progerss -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer"></footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

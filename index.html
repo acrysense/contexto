@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contexto</title>
+	<meta property="og:title" content="Word Finder">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Word Finder">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<h1 class="header__logotype">CONTEXTO <sup>DAILY</sup></h1>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-stats"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-settings"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-how-to"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- menu -->
+		<div class="menu" id="menu"></div>
+		<div class="menu-overlay" id="menu-overlay"></div>
+		<!-- end of menu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- word -->
+			<div class="word" id="word">
+				<div class="container">
+					<div class="word__top">
+						<span class="word__heading">Game: <b>#54</b></span>
+						<a href="#" class="word__link">New game</a>
+					</div>
+					<div class="word__wrapper">
+						<input type="text" class="word__input" placeholder="Enter a word">
+					</div>
+				</div>
+			</div>
+			<!-- end of word -->
+			<!-- how to play -->
+			<div class="how-to-play" id="how-to-play">
+				<div class="container">
+					<div class="how-to-play__wrapper">
+						<div class="how-to-play__top">
+							<h2 class="how-to-play__heading">How to play</h2>
+						</div>
+						<div class="how-to-play__body">
+							<h4 class="how-to-play__description">
+								Find the secret word. You have unlimited guesses.
+								<br><br>
+								The words were sorted by an artificial intelligence algorithm according to how similar they were to the secret word.
+								<br><br>
+								After submitting a word, you will see its position. The secret word is number 1.
+								<br>
+								The algorithm analyzed thousands of texts. It uses the context in which words are used to calculate the similarity between them.
+							</h4>
+							<span class="how-to-play__subtitle">For example:</span>
+							<div class="word-progress">
+								<div class="word-progress__wrapper">
+									<div class="word-progress__inner" style="--progressWidth: 20%;">
+										<span class="word-progress__value">amazing</span>
+										<span class="word-progress__value">219</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 50%;">
+										<span class="word-progress__value">director</span>
+										<span class="word-progress__value">53</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 80%;">
+										<span class="word-progress__value">actor</span>
+										<span class="word-progress__value">14</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 100%;">
+										<span class="word-progress__value">movie</span>
+										<span class="word-progress__value">1</span>
+									</div>
+								</div>
+							</div>
+							<span class="how-to-play__subtitle"><span>Movie</span> is a correct answer!</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of how to play -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer"></footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
