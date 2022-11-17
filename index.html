@@ -25,21 +25,21 @@
 					<h1 class="header__logotype">CONTEXTO <sup>DAILY</sup></h1>
 					<ul class="header__list">
 						<li class="header__item">
-							<a href="#" class="header__link">
+							<a href="#" class="header__link" data-header-btn="statistics">
 								<svg class="header__icon">
 									<use xlink:href="img/sprite.svg#icon-stats"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="header__item">
-							<a href="#" class="header__link">
+							<a href="#" class="header__link" data-header-btn="settings">
 								<svg class="header__icon">
 									<use xlink:href="img/sprite.svg#icon-settings"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="header__item">
-							<a href="#" class="header__link">
+							<a href="#" class="header__link" data-header-btn="how-to-play">
 								<svg class="header__icon">
 									<use xlink:href="img/sprite.svg#icon-how-to"></use>
 								</svg>
@@ -50,10 +50,172 @@
 			</div>
 		</header>
 		<!-- end of header -->
-		<!-- menu -->
-		<div class="menu" id="menu"></div>
-		<div class="menu-overlay" id="menu-overlay"></div>
-		<!-- end of menu -->
+		<!-- dropdown content -->
+		<div class="wrapper__dropdown-content">
+			<!-- statistics -->
+			<div class="wrapper__header-content statistics" id="statistics" data-header="statistics">
+				<div class="container">
+					<div class="statistics__wrapper">
+						<div class="statistics__top">
+							<h2 class="statistics__heading">Statistics</h2>
+							<button class="statistics__close header-content-close" aria-label="Закрыть">
+								<svg class="statistics__close-icon">
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="statistics__body">
+							<div class="statistics__wrap">
+								<div class="statistics__item">
+									<h3 class="statistics__value">24</h3>
+									<span class="statistics__help">GAMES PLAYED</span>
+								</div>
+								<div class="statistics__item">
+									<h3 class="statistics__value">16</h3>
+									<span class="statistics__help">GAMES WON</span>
+								</div>
+								<div class="statistics__item">
+									<h3 class="statistics__value">66</h3>
+									<span class="statistics__help">% OF WINS</span>
+								</div>
+								<div class="statistics__item">
+									<h3 class="statistics__value">3</h3>
+									<span class="statistics__help">CURRENT STREAK</span>
+								</div>
+								<div class="statistics__item">
+									<h3 class="statistics__value">5</h3>
+									<span class="statistics__help">MAX STREAK</span>
+								</div>
+								<div class="statistics__item">
+									<h3 class="statistics__value">12</h3>
+									<span class="statistics__help">AVERAGE GUESSES</span>
+								</div>
+							</div>
+							<div class="statistics__inner">
+								<a href="#" class="statistics__btn btn">Share</a>
+								<a href="#" class="statistics__btn btn btn--transparent">Reset</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of statistics -->
+			<!-- settings -->
+			<div class="wrapper__header-content settings" id="settings" data-header="settings">
+				<div class="container">
+					<div class="settings__wrapper">
+						<div class="settings__top">
+							<h2 class="settings__heading">Settings</h2>
+							<button class="settings__close header-content-close" aria-label="Закрыть">
+								<svg class="settings__close-icon">
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="settings__body">
+							<div class="settings__block">
+								<h3 class="settings__title">Dark mode</h3>
+								<div class="switch settings__switch">
+									<input type="checkbox" id="switch-dark-mode" class="switch__input">
+									<label for="switch-dark-mode" class="switch__label"></label>
+								</div>
+							</div>
+							<div class="settings__block">
+								<h3 class="settings__title">Unlimited mode</h3>
+								<div class="switch settings__switch">
+									<input type="checkbox" id="switch-unlimited-mode" class="switch__input" checked>
+									<label for="switch-unlimited-mode" class="switch__label"></label>
+								</div>
+							</div>
+							<div class="settings__block">
+								<h3 class="settings__title">Language</h3>
+								<div class="settings__checkboxes">
+									<div class="circle-checkbox settings__checkbox">
+										<input type="radio" id="checkbox-language-01" class="circle-checkbox__input" name="language" checked>
+										<label for="checkbox-language-01" class="circle-checkbox__label">
+											<span class="circle-checkbox__text">English</span>
+											<span class="circle-checkbox__icon"></span>
+										</label>
+									</div>
+									<div class="circle-checkbox settings__checkbox">
+										<input type="radio" id="checkbox-language-02" class="circle-checkbox__input" name="language">
+										<label for="checkbox-language-02" class="circle-checkbox__label">
+											<span class="circle-checkbox__text">Deutsch</span>
+											<span class="circle-checkbox__icon"></span>
+										</label>
+									</div>
+									<div class="circle-checkbox settings__checkbox">
+										<input type="radio" id="checkbox-language-03" class="circle-checkbox__input" name="language">
+										<label for="checkbox-language-03" class="circle-checkbox__label">
+											<span class="circle-checkbox__text">Espanol</span>
+											<span class="circle-checkbox__icon"></span>
+										</label>
+									</div>
+									<div class="circle-checkbox settings__checkbox">
+										<input type="radio" id="checkbox-language-04" class="circle-checkbox__input" name="language">
+										<label for="checkbox-language-04" class="circle-checkbox__label">
+											<span class="circle-checkbox__text">Portuguese</span>
+											<span class="circle-checkbox__icon"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of settings -->
+			<!-- how to play -->
+			<div class="wrapper__header-content how-to-play" id="how-to-play" data-header="how-to-play">
+				<div class="container">
+					<div class="how-to-play__wrapper">
+						<div class="how-to-play__top">
+							<h2 class="how-to-play__heading">How to play</h2>
+							<button class="statistics__close header-content-close" aria-label="Закрыть">
+								<svg class="statistics__close-icon">
+									<use xlink:href="img/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="how-to-play__body">
+							<h4 class="how-to-play__description">
+								Find the secret word. You have unlimited guesses.
+								<br><br>
+								The words were sorted by an artificial intelligence algorithm according to how similar they were to the secret word.
+								<br><br>
+								After submitting a word, you will see its position. The secret word is number 1.
+								<br>
+								The algorithm analyzed thousands of texts. It uses the context in which words are used to calculate the similarity between them.
+							</h4>
+							<span class="how-to-play__subtitle">For example:</span>
+							<div class="word-progress">
+								<div class="word-progress__wrapper">
+									<div class="word-progress__inner" style="--progressWidth: 20%;">
+										<span class="word-progress__value">amazing</span>
+										<span class="word-progress__value">219</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 50%;">
+										<span class="word-progress__value">director</span>
+										<span class="word-progress__value">53</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 80%;">
+										<span class="word-progress__value">actor</span>
+										<span class="word-progress__value">14</span>
+									</div>
+									<div class="word-progress__inner" style="--progressWidth: 100%;">
+										<span class="word-progress__value">movie</span>
+										<span class="word-progress__value">1</span>
+									</div>
+								</div>
+							</div>
+							<span class="how-to-play__subtitle"><span>Movie</span> is a correct answer!</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of how to play -->
+		</div>
+		<!-- end of dropdown content -->
 		<!-- content -->
 		<div class="wrapper__content">
 			<!-- word -->
